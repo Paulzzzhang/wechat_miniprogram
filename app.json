@@ -4,9 +4,10 @@
     "pages/logs/logs"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundText":"hello world",
+    "navigationBarBackgroundColor": "#ggg",
+    "navigationBarTitleText": "Paul",
     "navigationBarTextStyle":"black"
   }
 }
