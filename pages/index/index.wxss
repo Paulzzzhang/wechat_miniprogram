@@ -1,0 +1,21 @@
+.container{
+  background-color: #eee;
+  height:100vh;
+  display:  flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.nav-default{
+  color:blue;
+}
+.nav-hover
+{
+  color:darkgreen;
+}
+.about-banner{
+  width:375rpx;
+  height: 375rpx;
+  border-radius: 60%;
+}

@@ -1,13 +1,29 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/weekly/weekly"
   ],
-  "window":{
-    "backgroundTextStyle":"dark",
-    "navigationBarBackgroundText":"hello world",
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundText": "hello world",
     "navigationBarBackgroundColor": "#ggg",
     "navigationBarTitleText": "Paul",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"images/icons/主页面.png",
+        "selectedIconPath":"images/icons/主页面 (2).png"
+        
+
+      },
+      {
+        "pagePath": "pages/weekly/weekly",
+        "iconPath": "images/icons/详情 (1).png",
+        "selectedIconPath": "images/icons/详情.png"
+      }
+    ]
   }
 }

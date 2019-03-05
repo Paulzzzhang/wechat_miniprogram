@@ -1,0 +1,7 @@
+<!--pages/weekly/weekly.wxml-->
+<view class="container">
+  <text>本周推荐</text>
+  <image src="/images/like.png"></image>
+  <text>约会大作战</text>
+  <text>后宫剧</text>
+</view>

@@ -1,0 +1,6 @@
+<view class="container">  
+   <image class="about-banner" src="/images/this.png"></image>
+   <text style="font-weight:bold;font size:100rpx">动漫推荐</text>
+   <navigator style='display:inline;'  url='/pages/weekly/weekly' open-type='switchTab' hover-class='nav-hover '  class='nav-default'>每周推荐一部动漫</navigator>
+   <text>我的github：JasonZhangblue</text>
+</view>

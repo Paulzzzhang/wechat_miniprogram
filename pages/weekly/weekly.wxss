@@ -1,10 +1,10 @@
-/**app.wxss**/
-.container{
+/* pages/weekly/weekly.wxss */
+
+.container {
   background-color: #eee;
-  height:100vh;
-  display:  flex;
+  height: 100vh;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
 }
