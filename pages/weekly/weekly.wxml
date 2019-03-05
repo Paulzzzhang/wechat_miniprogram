@@ -1,7 +1,8 @@
 <!--pages/weekly/weekly.wxml-->
 <view class="container">
   <text>本周推荐</text>
-  <image src="/images/like.png"></image>
-  <text>约会大作战</text>
-  <text>后宫剧</text>
+  <image src="{{thisweekcomics.imagePath}}"></image>
+  <text>{{thisweekcomics.name}}</text>
+  <text>{{thisweekcomics.comment}}</text>
+  <text wx:if="{{thisweekcomics.isStronglycommended}}"  style="font-size :20px;color:pink;">很推荐</text>
 </view>

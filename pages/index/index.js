@@ -4,7 +4,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    thisweekcomics:{
+      name:"约会大作战",
+      comment:"五河士道的后宫番",
+      imagePath:"/images/this.png"
+
+    }
   },
 
   /**
