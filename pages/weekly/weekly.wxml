@@ -1,8 +1,19 @@
 <!--pages/weekly/weekly.wxml-->
-<view class="container">
-  <text>本周推荐</text>
-  <image src="{{thisweekcomics.imagePath}}"></image>
-  <text>{{thisweekcomics.name}}</text>
-  <text>{{thisweekcomics.comment}}</text>
-  <text wx:if="{{thisweekcomics.isStronglyCommended}}"  style="font-size :20px;color:pink;">很推荐</text>
-</view>
+  <view class="">
+    <swiper class="card" indicator-dots="{{true}}"  autoplay="{{true}}" circular='{{true}}'>
+      <swiper-item wx:for ="{{thisweekcomicslist}}"  >
+        <view class="container">
+            <image src="{{item.imagePath}}" mode="widthFix"></image>
+            <text>week {{index+1}} :{{item.name}}</text>
+            <text>{{item.c}}</text>
+            <text wx:if="{{item.isStronglyCommended}}"  style="font-size :20px;color:pink;">很推荐</text>
+        </view>
+      </swiper-item>
+    
+    </swiper>
+    
+   
+    
+   
+ 
+  </view>

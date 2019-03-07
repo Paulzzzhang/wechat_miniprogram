@@ -5,14 +5,31 @@ Page({
    * 页面的初始数据
    */
   data: {
-    thisweekcomics: {
-      name: "约会大作战",
-      comment: "五河士道的后宫番",
-      imagePath: "/images/like.png",
-      isStronglyCommended:true
+    thisweekcomicslist:[
+      {
+        name: "约会大作战",
+        c: "五河士道的后宫番",
+        imagePath: "/images/like.png",
+        isStronglyCommended: true
 
-    },
-    count:1
+      },
+      {
+         
+        name: "进击的巨人",
+        c: "热血战斗",
+        imagePath: "/images/2.png",
+        isStronglyCommended: true
+
+      },
+      {
+        name: "约会大作战",
+        c: "五河士道的后宫番",
+        imagePath: "/images/3.png",
+      }
+      
+
+    ]
+   
 
   },
 
