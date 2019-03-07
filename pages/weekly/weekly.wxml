@@ -4,5 +4,5 @@
   <image src="{{thisweekcomics.imagePath}}"></image>
   <text>{{thisweekcomics.name}}</text>
   <text>{{thisweekcomics.comment}}</text>
-  <text wx:if="{{thisweekcomics.isStronglycommended}}"  style="font-size :20px;color:pink;">很推荐</text>
+  <text wx:if="{{thisweekcomics.isStronglyCommended}}"  style="font-size :20px;color:pink;">很推荐</text>
 </view>

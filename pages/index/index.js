@@ -7,7 +7,7 @@ Page({
     thisweekcomics:{
       name:"约会大作战",
       comment:"五河士道的后宫番",
-      imagePath:"/images/this.png"
+      imagePath:"/wechat/.../.../images/this.png"
 
     }
   },
