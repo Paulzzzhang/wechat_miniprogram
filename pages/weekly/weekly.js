@@ -10,7 +10,8 @@ Page({
         name: "约会大作战",
         c: "五河士道的后宫番",
         imagePath: "/images/like.png",
-        isStronglyCommended: true
+        isStronglyCommended: true,
+        id:1
 
       },
       {
@@ -18,17 +19,21 @@ Page({
         name: "进击的巨人",
         c: "热血战斗",
         imagePath: "/images/2.png",
-        isStronglyCommended: true
+        isStronglyCommended: true,
+        id: 2
 
       },
       {
-        name: "约会大作战",
-        c: "五河士道的后宫番",
+        name: "FATE",
+        c: "没看过",
         imagePath: "/images/3.png",
+        isStronglyCommended: false,
+        id: 3
       }
       
 
-    ]
+    ],
+    currentIndex:0,
    
 
   },
@@ -37,6 +42,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.setData({
+      currentIndex:this.data.thisweekcomicslist.length-1
+  
+    })
 
   },
 
@@ -87,5 +96,19 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  f0:function(event)
+  {
+    this.setData({
+      currentIndex: this.data.thisweekcomicslist.length-1
+
+    })
+  },
+  f1:function(event)
+  {
+    var movieId=event.currentTarget.dataset.movieId
+    wx.navigateTo({
+      url: '/pages/detail/detail?id='+movieId,
+    })
   }
 })

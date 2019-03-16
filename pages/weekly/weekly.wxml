@@ -1,19 +1,19 @@
 <!--pages/weekly/weekly.wxml-->
   <view class="">
-    <swiper class="card" indicator-dots="{{true}}"  autoplay="{{true}}" circular='{{true}}'>
+    <swiper class="card" indicator-dots="{{true}}"  autoplay="{{true}}" circular='{{true}}' current='{{currentIndex}}'>
       <swiper-item wx:for ="{{thisweekcomicslist}}"  >
-        <view class="container">
-            <image src="{{item.imagePath}}" mode="widthFix"></image>
-            <text>week {{index+1}} :{{item.name}}</text>
+        <view class="container" >
+            <image src="{{item.imagePath}}"bindtap='f1' 
+                  data-movie-id="{{item.id}}" mode="aspectFit"></image>
+            <text>week {{index+1}}:{{item.name}}</text>
             <text>{{item.c}}</text>
             <text wx:if="{{item.isStronglyCommended}}"  style="font-size :20px;color:pink;">很推荐</text>
+            <text   bindtap="f0"  class='return-button' wx:if="{{index<thisweekcomicslist.length-1}}" >return to current</text>
+           
+            
         </view>
       </swiper-item>
     
     </swiper>
     
-   
-    
-   
- 
   </view>

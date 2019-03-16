@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/weekly/weekly"
+    "pages/weekly/weekly",
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -10,14 +11,12 @@
     "navigationBarTitleText": "Paul",
     "navigationBarTextStyle": "black"
   },
-  "tabBar":{
-    "list":[
+  "tabBar": {
+    "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath":"images/icons/主页面.png",
-        "selectedIconPath":"images/icons/主页面 (2).png"
-        
-
+        "iconPath": "images/icons/主页面.png",
+        "selectedIconPath": "images/icons/主页面 (2).png"
       },
       {
         "pagePath": "pages/weekly/weekly",

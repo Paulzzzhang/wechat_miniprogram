@@ -1,0 +1,2 @@
+<!--pages/detail/detail.wxml-->
+<text>this is detail for movie {{mid}}</text>

@@ -1,13 +1,35 @@
 /* pages/weekly/weekly.wxss */
 
 .container {
-  background-color: #eee;
+  background-color: rgb(234, 240, 180);
   
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  height:100vh;
+  
+ 
 }
 .card{
-  height: 90vh;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+
+  margin: 0vh;
+}
+.content{
+   background-color: blue;
+}
+.return-button{
+  width: 80%;
+  margin-top: 20rpx;
+  background-color: burlywood;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
