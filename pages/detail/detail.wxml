@@ -1,2 +1,11 @@
 <!--pages/detail/detail.wxml-->
-<text>this is detail for movie {{mid}}</text>
+<view class="conotainer">
+  <image class= "movieImg" src='{{movie.images.small}}'></image>
+  <text class="moviebasic">{{movie.title}}\n</text>
+  <text class="moviebasic">想看：{{movie.wish_count}}\n</text>
+  <text class="moviebasic">看过：{{movie.collect_count}}\n</text>
+  <text class="moviebasic">评分：{{movie.rating.average}}\n</text>
+  <text class="moviebasic">动漫：{{movie.original_title}}\n</text>
+  <text class="moviebasic">简介：{{movie.summary}}\n</text>
+  
+</view>

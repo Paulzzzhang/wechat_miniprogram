@@ -15,15 +15,32 @@ Page({
     this.setData({
       mid:options.id
     })
+    var that=this
     wx.request({
-      url: 'https://api.douban.com',
+      url: 'https://douban.uieee.com/v2/movie/subject/'+options.id,
       method:"GET",
       header:{
+        "content-type":"jsom"
 
       },
+      
       success:function(res)
       {
         console.log(res)
+        if(res.statusCode=200)
+        {
+          that.setData({
+            movie: res.data
+
+          }
+          )
+          wx.setNavigationBarTitle({
+            title: res.data.original_title,
+          })
+          wx.hideNavigationBarLoading()
+         
+        }
+       
       },
       complete:function()
       {
@@ -31,6 +48,7 @@ Page({
       }
 
     })
+    wx.showNavigationBarLoading()
   
 
   },

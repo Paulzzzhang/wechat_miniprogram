@@ -11,7 +11,7 @@ Page({
         c: "五河士道的后宫番",
         imagePath: "/images/like.png",
         isStronglyCommended: true,
-        id:1
+        id: 27178689
 
       },
       {
@@ -20,7 +20,7 @@ Page({
         c: "热血战斗",
         imagePath: "/images/2.png",
         isStronglyCommended: true,
-        id: 2
+        id: 30353357
 
       },
       {
@@ -28,7 +28,7 @@ Page({
         c: "没看过",
         imagePath: "/images/3.png",
         isStronglyCommended: false,
-        id: 3
+        id: 1727200
       }
       
 
